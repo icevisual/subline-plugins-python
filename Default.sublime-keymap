@@ -1,0 +1,17 @@
+[
+    {
+        "keys": [
+            "f5"
+        ],
+        "command": "output"
+    },
+    {
+        "keys": [
+            "f7"
+        ],
+        "args": {
+            "to_lang": "en"
+        },
+        "command": "translate"
+    }
+]

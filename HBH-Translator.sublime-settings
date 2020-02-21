@@ -1,0 +1,16 @@
+{
+    //the version of HBH-Translator
+    "version":"1.0.3",
+
+    //baidu api appid
+    "appid":"20200220000386244",
+
+    //baidu api secret key
+    "secret_key":"KA6vqmhVrEMrRbr0rmma",
+
+    //default translate to language
+    "default_to_lang":"zh",
+
+    //save translate result in clipboard
+    "save_result_in_clipboard":true
+}

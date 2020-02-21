@@ -1,0 +1,22 @@
+[
+    { "caption": "-", "id": "file" },
+    {
+        "caption": "Ice-Output",
+        "children": [
+            {
+                "caption":"ice output",
+                "command":"translate",
+                "args":{
+                    "to_lang":"zh"
+                }
+            },
+            {
+                "caption":"Translate to english",
+                "command":"translate",
+                "args":{
+                    "to_lang":"en"
+                }
+            }
+        ]
+    }
+]

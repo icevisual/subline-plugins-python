@@ -1,0 +1,69 @@
+[
+    {
+        "mnemonic": "n",
+        "caption": "Preferences",
+        "id": "preferences",
+        "children": [
+            {
+                "mnemonic": "P",
+                "caption": "Package Settings",
+                "id": "package-settings",
+                "children": [
+                    {
+                        "caption": "Ice-Output",
+                        "children": [
+                            {
+                                "caption": "Settings – Default",
+                                "args": {
+                                    "file": "${packages}/Ice-Output/HBH-Translator.sublime-settings"
+                                },
+                                "command": "open_file"
+                            },
+                            {
+                                "caption": "Settings – User",
+                                "args": {
+                                    "file": "${packages}/User/HBH-Translator.sublime-settings"
+                                },
+                                "command": "open_file"
+                            },
+                            {
+                                "caption": "-"
+                            },
+                            {
+                                "caption": "Key Bindings – Default",
+                                "args": {
+                                    "file": "${packages}/Ice-Output/Default.sublime-keymap"
+                                },
+                                "command": "open_file"
+                            },
+                            {
+                                "caption": "Key Bindings – User",
+                                "args": {
+                                    "file": "${packages}/User/Default.sublime-keymap"
+                                },
+                                "command": "open_file"
+                            },
+                            {
+                                "caption": "-"
+                            },
+                            {
+                                "caption": "translate->cn",
+                                "args": {
+                                    "to_lang": "zh"
+                                },
+                                "command": "translate"
+                            },
+                            {
+                                "caption": "translate->en",
+                                "args": {
+                                    "to_lang": "en"
+                                },
+                                "command": "translate"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
