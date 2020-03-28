@@ -9,6 +9,6 @@
         "keys": [
             "f7"
         ],
-        "command": "trim"
+        "command": "replace_square_brackets"
     }
 ]
