@@ -16,6 +16,20 @@
                 "args":{
                     "to_lang":"en"
                 }
+            },
+            {
+                "caption":"Replace [] => {}",
+                "command":"replace_square_brackets",
+                "args":{
+                    "replace_colon":false
+                }
+            },
+            {
+                "caption":"Replace [] => {},\" => '",
+                "command":"replace_square_brackets",
+                "args":{
+                    "replace_colon":true
+                }
             }
         ]
     }

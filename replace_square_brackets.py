@@ -4,11 +4,12 @@ import sublime, sublime_plugin
 
 
 class ReplaceSquareBracketsCommand(sublime_plugin.TextCommand):
-    def run(self, edit):
+    def run(self, edit,replace_colon=False):
         print("ReplaceSquareBracketsCommand")
         self.replace_(edit, r'\[',"{")
         self.replace_(edit, r'\]',"}")
-        self.replace_(edit, r'\"',"\'")
+        if replace_colon:
+        	self.replace_(edit, r'\"',"\'")
 
     def replace_(self,edit,pattern0,replace0):
         pattern = pattern0
