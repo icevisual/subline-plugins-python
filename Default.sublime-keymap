@@ -9,9 +9,6 @@
         "keys": [
             "f7"
         ],
-        "args": {
-            "to_lang": "en"
-        },
-        "command": "translate"
+        "command": "trim"
     }
 ]
