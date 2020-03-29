@@ -16,7 +16,7 @@ class TranslateCommand(sublime_plugin.TextCommand):
         sels = self.view.sel()
         sels_str = []
         for sel in sels:
-            sel_str = self.view.substr(sel).strip()
+            sel_str = self.view.substr(~).strip()
             if sel_str:
                 sels_str.append(sel_str)
         print('sels_str:', sels_str)

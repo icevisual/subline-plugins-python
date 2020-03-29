@@ -9,6 +9,6 @@
         "keys": [
             "f7"
         ],
-        "command": "replace_square_brackets"
+        "command": "empty_line_clear"
     }
 ]
