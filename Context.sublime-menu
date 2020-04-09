@@ -32,7 +32,7 @@
                 }
             },
             {
-                "caption":"Trim Html tag",
+                "caption":"Trim HTML Tags",
                 "command":"trim_html_tag"
             }
         ]
