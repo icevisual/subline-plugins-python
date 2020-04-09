@@ -30,6 +30,10 @@
                 "args":{
                     "replace_colon":true
                 }
+            },
+            {
+                "caption":"Trim Html tag",
+                "command":"trim_html_tag"
             }
         ]
     }
