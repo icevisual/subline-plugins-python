@@ -1,4 +1,5 @@
 import sublime, sublime_plugin
+import os
 
 class TrimHtmlTagCommand(sublime_plugin.TextCommand):
 
@@ -32,13 +33,20 @@ class TrimHtmlTagCommand(sublime_plugin.TextCommand):
   def print_sql(self):
     print(TrimHtmlTagCommand.number2chinese(100))
     # ('N000000000020A', 'G20', '通用 二十', '2', '0', ':108:', '1492076318')
-    for i in range(21,101):
+    print("INSERT INTO `sm_smell` (`smell_sn`, `en_name`, `cn_name`, `type`, `is_pc_show`, `tags`, `created_at`) VALUES")
+    for i in range(101,1000):
       print("('N000000000%03dA', 'G%d', '通用 %s', '2', '0', ':108:', '1492076318')," % (i, i, TrimHtmlTagCommand.number2chinese(i)))
-    a = 2
-    if a is 2:
-        return
+
+  def print_sql_f(self):
+    print(TrimHtmlTagCommand.number2chinese(100))
+    with open("a.txt","w") as f:
+      # ('N000000000020A', 'G20', '通用 二十', '2', '0', ':108:', '1492076318')
+      f.write("INSERT INTO `sm_smell` (`smell_sn`, `en_name`, `cn_name`, `type`, `is_pc_show`, `tags`, `created_at`) VALUES\n")
+      for i in range(101,1000):
+        f.write("('N000000000%03dA', 'G%d', '通用 %s', '2', '0', ':108:', '1492076318'),\n" % (i, i, TrimHtmlTagCommand.number2chinese(i)))
 
   def run(self, edit):
+    return self.print_sql_f()
     pattern = r'<(?:[^"\'>]|(["\'])[^"\']*\1)*>'
     # pattern = r'[\n\s]+'
     finds = self.view.find_all(pattern,0)
